@@ -13,16 +13,16 @@ def get_token():
     server = "https://openapi.baidu.com/oauth/2.0/token?"
     grant_type = "client_credentials"
     # API Key
-    client_id = "X6uxcsmsWKqn8r2c1BIvYmHc"
+    client_id = "您的百度云 API Key"
     # Secret Key
-    client_secret = "L3SbGwk5TKf0Gmnupz6iSgUVOg93TzQy"
+    client_secret = "您的百度云的Secret Key"
 
     # 拼url
     url = "%sgrant_type=%s&client_id=%s&client_secret=%s" % (server, grant_type, client_id, client_secret)
     # 获取token
     res = requests.post(url)
     token = json.loads(res.text)["access_token"]
-    return token
+    return token 
 
 
 RATE = "16000"

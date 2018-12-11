@@ -41,8 +41,8 @@ def answer(mytext):
 
         "userInfo":
         {
-            "apiKey": "bd67fa03a12340be8c68d502640cd369",
-            "userId": "350492"
+            "apiKey": "您在图灵机器人申请的aipKey",
+            "userId": "图灵机器人给您的ID"
         }
     }
 
